@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title">My survey</h1>
+    <p id="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus porttitor turpis ac leo. Mauris tincidunt sem sed arcu. Aenean placerat. Aliquam id dolor. Et harum quidem rerum facilis est et expedita distinctio. Aliquam ante.</p>
+
+    <form id="survey-form">
+      <label id="name-label">Name</label>
+      <input id="name" type="text" placeholder="Enter your name" required>
+      <label id="email-label">Email</label>
+      <input id="email" type="email" placeholder="Enter your email" required>
+      <label id="number-label">Age</label>
+      <input id="number" type="number" min="0" max="120" placeholder="Age">
+
+      <select id="dropdown">
+        <option value="">(select one)</option>
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+      </select>
+      <label>
+        <input type="radio" name="gender" value="male">
+        Male
+      </label>
+      <label>
+        <input type="radio" name="gender" value="female">
+        Female
+      </label>
+
+      <label>
+        <input name="language" type="checkbox" value="English">
+        English
+      </label>
+      <label>
+        <input name="language" type="checkbox" value="German">
+        German
+      </label>
+      <label>
+        <input name="language" type="checkbox" value="Czech">
+        Czech
+      </label>
+
+      <label>
+        <textarea></textarea>
+      </label>
+
+      <input type="submit" id="submit">
+    </form>
+</body>
+</html>
