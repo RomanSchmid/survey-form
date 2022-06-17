@@ -9,49 +9,71 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 id="title">My survey</h1>
-    <p id="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus porttitor turpis ac leo. Mauris tincidunt sem sed arcu. Aenean placerat. Aliquam id dolor. Et harum quidem rerum facilis est et expedita distinctio. Aliquam ante.</p>
+  <div class="container">
+
+    <header class="header">
+      <h1 id="title">Survey Form</h1>
+      <p id="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus porttitor turpis ac leo. Mauris tincidunt sem sed arcu. Aenean placerat. Aliquam id dolor. Et harum quidem rerum facilis est et expedita distinctio. Aliquam ante.</p>
+    </header>
 
     <form id="survey-form">
-      <label id="name-label">Name</label>
-      <input id="name" type="text" placeholder="Enter your name" required>
-      <label id="email-label">Email</label>
-      <input id="email" type="email" placeholder="Enter your email" required>
-      <label id="number-label">Age</label>
-      <input id="number" type="number" min="0" max="120" placeholder="Age">
+      <div class="form-part">
+        <label id="name-label" for="name">Name</label>
+        <input id="name" type="text" class="" placeholder="Enter your name" required>
+      </div>
 
-      <select id="dropdown">
-        <option value="">(select one)</option>
-        <option value="1">Option 1</option>
-        <option value="2">Option 2</option>
-      </select>
-      <label>
-        <input type="radio" name="gender" value="male">
-        Male
-      </label>
-      <label>
-        <input type="radio" name="gender" value="female">
-        Female
-      </label>
+      <div class="form-part">
+        <label id="email-label" for="email">Email</label>
+        <input id="email" type="email" placeholder="Enter your email" required>
+      </div>
 
-      <label>
-        <input name="language" type="checkbox" value="English">
-        English
-      </label>
-      <label>
-        <input name="language" type="checkbox" value="German">
-        German
-      </label>
-      <label>
-        <input name="language" type="checkbox" value="Czech">
-        Czech
-      </label>
+      <div class="form-part">
+        <label id="number-label" for="number">Age</label>
+        <input id="number" type="number" min="0" max="120" placeholder="Age">
+      </div>
 
-      <label>
-        <textarea></textarea>
-      </label>
+      <div class="form-part">
+        <select id="dropdown">
+          <option value="">(select one)</option>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+        </select>  
+      </div>
+
+      <div class="form-part">
+        <label>
+          <input type="radio" name="gender" value="male">
+          Male
+        </label>
+        <label>
+          <input type="radio" name="gender" value="female">
+          Female
+        </label>
+      </div>
+      
+      <div class="form-part">
+        <label>
+          <input name="language" type="checkbox" value="English">
+          English
+        </label>
+        <label>
+          <input name="language" type="checkbox" value="German">
+          German
+        </label>
+        <label>
+          <input name="language" type="checkbox" value="Czech">
+          Czech
+        </label>  
+      </div>
+      <div class="form-part">
+        <label>
+          <textarea></textarea>
+        </label>
+      </div>
 
       <input type="submit" id="submit">
     </form>
+  </div>
+    
 </body>
 </html>
