@@ -73,7 +73,7 @@ form p {
 }
 
 .form-section {
-    margin: 0 auto 1rem auto;
+    margin: 0 auto 0.9rem auto;
     padding-bottom: 0.2rem;
     width: 100%;
 }
@@ -89,9 +89,18 @@ label {
     height: 2.5rem;
     padding: 0.5rem 0.8rem;
     border-radius: 0.4rem;
-    /* box-shadow: 1px 1px 3px var(--color-gold); */
     border-bottom: 1px solid var(--color-gold);
 }
+
+.input-text:focus, .input-email:focus, .input-number:focus, .input-dropdown:focus, .input-range:focus {
+    transition: 800ms;
+    outline: 1.5px solid var(--color-gold);
+}
+
+/* .input-text:valid, .input-email:valid, .input-number:valid, .input-dropdown:valid, .input-range:valid {
+    transition: 800ms;
+    background: rgb(48, 45, 44);
+} */
 
 #years, output {
     color: var(--color-gold);
@@ -113,6 +122,7 @@ input, textarea, select {
     padding: 0.6rem;
     resize: vertical;
     border: 1px solid var(--color-gold);
+    outline: none
 }
 
 button {
@@ -126,16 +136,5 @@ button {
     padding: 0.7rem 0.4rem;
     width: 100%;
     border-radius: 0.2rem;
+    cursor: pointer;
 }
-
-/* input[type="submit"] {
-    display: block;
-    margin: 0 auto;
-    width: 60%;
-}
-
-input[type="radio"], input[type="checkbox"] {
-    width: unset;
-    margin: 0 0.5em 0 0;
-} */
-
